@@ -34,6 +34,10 @@
         /* 
           This here is a placeholder for now. I want to do it all natively, jQuery is just
           a helper for now, to cut some developmental corners here and there.
+
+          On scroll: only animate transform: translateY until animation is complete.
+          Then resume scrolling.
+          Test first: animate while e.preventDefault - can it animate?
         */
 
         document.addEventListener('scroll', function() {
